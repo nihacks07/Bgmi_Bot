@@ -5,10 +5,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('')
+bot = telebot.TeleBot('7180996584:AAGUemXMnmuOoW2_oN6wbpCINotLVbE3AWE')
 
 # Admin user IDs
-admin_id = []
+admin_id = ["937248261"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -320,5 +320,8 @@ def broadcast_message(message):
         response = "Only Admin Can Run This Command 😡."
 
     bot.reply_to(message, response)
+
+
+
 
 bot.polling()
